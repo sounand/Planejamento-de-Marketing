@@ -1,0 +1,23 @@
+NAND MOTION — TESTAR NO SEU COMPUTADOR
+
+1. Instale Node.js 24 pelo site oficial nodejs.org.
+2. Extraia este ZIP e abra um terminal na pasta extraída.
+3. Execute os comandos abaixo:
+
+   cd video-studio
+   npx --yes pnpm@11.25.0 install --frozen-lockfile
+   npx --yes pnpm@11.25.0 dev
+
+4. Com o terminal aberto, acesse localhost:3000 no navegador desse computador.
+
+Você pode ver a interface e selecionar arquivos sem credenciais.
+Para gerar de verdade, crie video-studio/.env.local e preencha:
+
+   HF_CREDENTIALS=<ID:SEGREDO da sua conta Higgsfield>
+   OPEN_HIGGSFIELD_READ_WRITE_TOKEN=<token real do Vercel Blob>
+
+Não compartilhe os valores em chat nem os envie ao GitHub.
+O Blob só é necessário para enviar arquivos. Com URLs HTTPS públicas, a chave Higgsfield basta.
+Após configurar .env.local, pare o servidor com Ctrl+C e execute novamente o comando dev.
+Cada geração usa o saldo da sua conta Higgsfield.
+Este ZIP inclui código-fonte; não inclui credenciais, dependências instaladas ou dados de testes.
